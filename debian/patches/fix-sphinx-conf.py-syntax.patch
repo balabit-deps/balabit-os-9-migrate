@@ -1,0 +1,19 @@
+Description: Fix sphinx conf.py syntax
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: https://review.opendev.org/c/x/sqlalchemy-migrate/+/815424
+Bug-Debian: https://bugs.debian.org/997343
+Last-Update: 2021-10-26
+
+--- migrate-0.13.0.orig/doc/source/conf.py
++++ migrate-0.13.0/doc/source/conf.py
+@@ -181,8 +181,8 @@ htmlhelp_basename = 'SQLAlchemyMigratedo
+ # Grouping the document tree into LaTeX files. List of tuples
+ # (source start file, target name, title, author, document class [howto/manual]).
+ latex_documents = [
+-  ('index', 'SQLAlchemyMigrate.tex', ur'SQLAlchemy Migrate Documentation',
+-   ur'Evan Rosson, Jan Dittberner, Domen Kožar', 'manual'),
++  ('index', 'SQLAlchemyMigrate.tex', r'SQLAlchemy Migrate Documentation',
++   r'Evan Rosson, Jan Dittberner, Domen Kožar', 'manual'),
+ ]
+ 
+ # The name of an image file (relative to this directory) to place at the top of

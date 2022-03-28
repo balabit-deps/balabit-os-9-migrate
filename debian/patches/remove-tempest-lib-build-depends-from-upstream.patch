@@ -1,0 +1,15 @@
+Description: Remove tempest-lib build-depends from upstream code
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: no
+Last-Update: 2018-04-27
+
+--- a/test-requirements.txt
++++ b/test-requirements.txt
+@@ -17,7 +17,6 @@
+ sphinxcontrib_issuetracker
+ testrepository>=0.0.17
+ testtools>=0.9.34,<0.9.36
+-tempest-lib>=0.1.0
+ 
+ # db2 support
+ ibm_db_sa>=0.3.0;python_version<'3.0'
